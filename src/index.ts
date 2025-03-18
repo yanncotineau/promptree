@@ -1,4 +1,4 @@
-export * from './promptree';
+export { Promptree as default } from './promptree';
 export * from './types';
 export * from './components/ForEach';
 export * from './components/Fragment';

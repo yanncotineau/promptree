@@ -4,7 +4,7 @@
     "module": "commonjs",
     "jsx": "react",
     "jsxFactory": "Promptree.createElement",
-    "jsxFragmentFactory": "Fragment",
+    "jsxFragmentFactory": "Promptree.Fragment",
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
@@ -16,6 +16,6 @@
     "declaration": true,
     "isolatedModules": true,
   },
-  "include": ["src/global.d.ts", "src", "examples"],
+  "include": ["src", "examples"],
   "exclude": ["node_modules"]
 }

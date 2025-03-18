@@ -1,14 +1,13 @@
-import { Promptree } from "../promptree";
 import { PromptChild, PromptChildArray } from "../types";
 
-export interface ForEachProps<T> {
+interface ForEachProps<T> {
   items: T[];
   render: (item: T, index: number) => PromptChild;
   separator?: PromptChild;
   inline?: boolean; // new optional flag
 }
 
-export const ForEach = <T,>(props: ForEachProps<T>): PromptChild => {
+export const ForEach = <T,>(props: ForEachProps<T>) => {
   const children: PromptChild[] = [];
   props.items.forEach((item, index) => {
     if (index > 0 && props.separator !== undefined) {
