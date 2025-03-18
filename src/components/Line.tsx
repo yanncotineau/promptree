@@ -1,4 +1,5 @@
-import { PromptChild, Prompt, Promptree } from "../promptree";
+import { Promptree } from "../promptree";
+import { Prompt } from "../types";
 import { FragmentProps } from "./Fragment";
 
 // Line component: joins children without separators for a single line

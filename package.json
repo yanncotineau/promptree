@@ -1,15 +1,33 @@
 {
   "name": "promptree",
+  "description": "JSX-based template engine for building LLM prompts from component trees.",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "repository": {
+    "url": "https://github.com/yanncotineau/promptree"
+  },
   "scripts": {
-    "start": "ts-node --project tsconfig.json src/sample.tsx",
+    "build": "tsup",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "keywords": [
+    "llm",
+    "ai",
+    "prompt",
+    "prompt engineering",
+    "chatgpt",
+    "jsx",
+    "openai",
+    "ml",
+    "machine learning"
+  ],
+  "author": "yanncotineau",
+  "license": "MIT",
   "devDependencies": {
-    "ts-node": "^10.9.2"
+    "ts-node": "^10.9.2",
+    "tsup": "^8.4.0",
+    "typescript": "^5.8.2"
   }
 }

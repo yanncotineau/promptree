@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "ES2019",
+    "target": "ES2022",
     "module": "commonjs",
     "jsx": "react",
     "jsxFactory": "Promptree.createElement",
@@ -9,7 +9,13 @@
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "outDir": "./dist"
+    "outDir": "dist",
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "moduleResolution": "node",
+    "declaration": true,
+    "isolatedModules": true,
   },
-  "include": ["src/**/*"]
+  "include": ["src/global.d.ts", "src", "examples"],
+  "exclude": ["node_modules"]
 }

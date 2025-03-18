@@ -1,5 +1,5 @@
-import { Promptree, PromptChild, PromptChildArray } from "../promptree";
-import { Fragment } from "./Fragment";
+import { Promptree } from "../promptree";
+import { PromptChild, PromptChildArray } from "../types";
 
 export interface ForEachProps<T> {
   items: T[];
@@ -16,11 +16,8 @@ export const ForEach = <T,>(props: ForEachProps<T>): PromptChild => {
     }
     children.push(props.render(item, index));
   });
-  if (props.inline) {
-    // Return the children array with a custom separator property (empty string) to avoid newlines.
-    const arr = children as PromptChildArray;
-    arr.separator = "";
-    return arr;
-  }
-  return Promptree.createElement(Fragment, { children });
+  const arr = children as PromptChildArray;
+  // If inline, do not add any extra separator when rendering the array.
+  arr.separator = props.inline ? "" : "\n";
+  return arr;
 };

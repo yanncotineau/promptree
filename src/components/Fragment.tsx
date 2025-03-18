@@ -1,4 +1,4 @@
-import { PromptChild, Prompt } from "../promptree";
+import { Prompt, PromptChild } from "../types";
 
 // Props for Fragment and Line components
 export interface FragmentProps {
