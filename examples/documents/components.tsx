@@ -1,8 +1,4 @@
-import { Prompt } from "../../src";
-import { ForEach } from "../../src/components/ForEach";
-import { Line } from "../../src/components/Line";
-import { NewLine } from "../../src/components/NewLine";
-import { Promptree } from "../../src/promptree";
+import Promptree, { Prompt, ForEach, Line, NewLine } from 'promptree';
 
 export interface Document {
   name: string;

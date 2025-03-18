@@ -1,4 +1,4 @@
-import Promptree from "../../src";
+import Promptree from 'promptree';
 import { DocumentsList } from "./components";
 
 const documents = [
