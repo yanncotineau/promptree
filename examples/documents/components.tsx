@@ -30,4 +30,3 @@ export const DocumentComponent: Prompt<{ document: Document }> = ({ document }) 
     <Line>Content : {document.content}</Line>
   </>
 );
-
